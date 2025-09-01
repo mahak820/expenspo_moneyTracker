@@ -10,7 +10,7 @@ const generateReport = async (token) => {
   };
 
   const response = await axios.get(`${api}/ai/report`, options);
-//   console.log(response.data)
+  console.log(response.data)
   return response.data; // this is AI's response
 };
 

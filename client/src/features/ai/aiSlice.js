@@ -8,7 +8,7 @@ const aiSlice = createSlice({
     isError: false,
     isSuccess: false,
     message: "",
-    aiReport: null , // store AI response here
+    aiReport: null , // store AI response here 
     aiPlan : null,
     isAdviceLoading : null , 
     aiChat : null , 

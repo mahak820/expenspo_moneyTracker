@@ -16,6 +16,8 @@ const generateAIReport = expressAsyncHandler(async (req, res) => {
     throw new Error("No transactions found for report generation");
   }
 
+  // console.log(transactions)
+
   // helper: format date as dd/mm/yy
   const formatDate = (date) => {
     return new Date(date).toLocaleDateString("en-GB"); // dd/mm/yyyy
@@ -34,6 +36,8 @@ const generateAIReport = expressAsyncHandler(async (req, res) => {
       }
     })
     .join("\n");
+
+    // console.log(formattedData)
 
 const prompt = `
 You are a financial advisor. Based on the following transactions, write a 
@@ -69,6 +73,8 @@ Provide the report only in HTML.
 
   const result = await model.generateContent(prompt);
   let report = result.response.text();
+
+  // console.log(report)
 
   // remove markdown ```html ... ```
   // report = report.replace(/```html|```/g, "");
