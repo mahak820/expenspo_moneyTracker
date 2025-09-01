@@ -20,34 +20,6 @@ Expenso isn’t just a tracker – it comes with FinSight, your personal finance
 3️⃣ 🤖 AI-Powered Chat Assistant – Instant financial tips & clarity through chat.
 
 
-## Demo
-
-Here's the live demo 
-
-https://expenso-80pe.onrender.com/
-## Installation
-
-Install my-project with npm
-
-```bash
-  git clone https://github.com/animeshthakur7879/expenso.git
-  cd expenso
-```
-
-```bash
-  npm install
-
-  ```
-  ```bash
-    npm run dev
-
-   ```
-    
-## Feedback
-
-If you have any feedback, please reach out to us at animeshthakur7648@gmail.com
-
-
 ## Tech Stack
 
 **Client:** React, Redux, TailwindCSS , Accertinity UI
