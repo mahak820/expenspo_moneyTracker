@@ -81,18 +81,9 @@ const FinSight = () => {
         const newHistory = [...chatHistory, { type: 'user', text: userQuery }];
         setChatHistory(newHistory);
         setUserQuery('');
-        // setIsChatLoading(true);
-
-        // TODO: Replace with actual API call to your backend
-        // setTimeout(() => {
-        //     const sampleResponse = "Your expenses last month were higher mainly because of a ₹9,000 charge for 'Phone Repair'. Your spending on 'Shopping' also increased by about 30% compared to your recent average. Your regular costs like 'Rent' and 'Utilities' remained stable.";
-        //     setChatHistory([...newHistory, { type: 'ai', text: sampleResponse }]);
-        //     // setIsChatLoading(false);
-        // }, 1500);
+        
 
         dispatch(generatePersonalChat(userQuery))
-        // setChatHistory([...newHistory, { type: 'ai', text: aiChat }]);
-
     };
 
     useEffect(() => {
