@@ -1,1 +1,1 @@
-export const api = 'http://localhost:8000/api'
+export const api = 'https://expenspo-backend.onrender.com/api'
